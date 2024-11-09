@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js">
+
+</head>
+<body>
+    <!--sessão de cabeçalho-->
+    <div class="cabeçalho"> 
+        <nav>
+            <div class="logo">
+                <img src="" alt="">
+            </div>
+            <ul class="menu">
+                <li data-aos="fade-down" data-aos-duration="2000" data-aos-deplay="100"><a href = "#"> Home </a></li>
+                <li data-aos="fade-down" data-aos-duration="2000" data-aos-deplay="200"><a href = "#"> Experiência </a></li>
+                <li data-aos="fade-down" data-aos-duration="2000" data-aos-deplay="300"><a href = "#"> Portifólio </a></li>
+                <li data-aos="fade-down" data-aos-duration="2000" data-aos-deplay="400"><a href = "#"> Blog </a></li>
+                <li data-aos="fade-down" data-aos-duration="2000" data-aos-deplay="500"><a href = "#"> Contato </a></li>
+            </ul>
+            <div class="bars"></div>
+            <i class="fa-solid fa-bars"></i>
+        </nav>
+        <div class="infos pessoais"></div>
+            <h1>App Devloper</h1>
+            <h2>Jasmin Shadday</h2> 
+            <p>
+                Entusiasta de tecnologia, sou estagiária de TI com experiência em automação de relatórios, desenvolvimento de dashboards e projetos de IA no Open Finance. Apaixonada por front-end e Inteligência Artificial, busco evoluir em Machine Learning e sonhar grande, explorando o mundo e o universo da tecnologia!
+            </p>
+            <div class="icon">
+                <li><a href=""><i class="fa-brands fa-linkedin"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+            </div>
+            <button>Ver mais</button>
+    </div>
+
+    <script>
+        let bar = document.querySelector(".bars .fa-bars");
+        let menu = document.querySelector(".menu");
+        bar.addEventListener("click", function(){
+            menu.classList.togle("show_menu");
+        });
+        AOS.init()
+        var typed = new typed('.text', {
+            String: ['Designer', 'Devloper','Plakson'],
+        typespeed: 100,
+    backspped : 80,
+    showcursor: false,
+    loop:true,
+    loopcount:Infinity
+    })
+    </script>
+</body>
+</html>
